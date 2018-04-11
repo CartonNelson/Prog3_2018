@@ -25,15 +25,15 @@ public class main {
 //		listaB.insert(1);
 //		listaB.insert(17);
 //		
-//		sistema s1 = new sistema(listaA,listaB);
-//		MyIterator itResultA = new MyIterator(s1.getListadoA(listaA, listaB).getFirst());
+//		SistA s1 = new SistA(listaA,listaB);
+//		MyIterator itResultA = new MyIterator(s1.getListado(listaA, listaB).getFirst());
 //		while(itResultA.hasNext()) {
 //			System.out.println(itResultA.next().getInfo());
 //		}
 		
 		
 		/////////////////PUNTO B////////////
-		
+		listaA.insert(1);
 		listaA.insert(3);
 		listaA.insert(5);
 		
@@ -42,10 +42,10 @@ public class main {
 		listaB.insert(5);
 		listaB.insert(7);
 		
-		sistema s1 = new sistema(listaA,listaB);
+		SistB s2 = new SistB(listaA,listaB);
 		
 		
-		MyIterator itResultB = new MyIterator(s1.getListadoB(listaA, listaB).getFirst());
+		MyIterator itResultB = new MyIterator(s2.getListado(listaA, listaB).getFirst());
 		while(itResultB.hasNext()) {
 			System.out.println(itResultB.next().getInfo());
 		}
