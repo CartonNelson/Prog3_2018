@@ -20,7 +20,7 @@ public class Arbol {
 	public boolean hasElem(Comparable<Integer> c) {
 		return hasElem(this.raiz, c);
 	}
-	
+	//complejidad O(h)///////////////
 	private Boolean hasElem(Node n, Comparable <Integer> c) {
 
 		if (n != null) {
@@ -43,7 +43,7 @@ public class Arbol {
 		else
 			insert(this.raiz, c);
 	}
-
+	//complejidad O(h)////////
 	private void insert(Node n, Comparable<Integer> c) {
 		if(c.compareTo((Integer) n.getInfo()) < 0) {
 			if (n.getIzq() == null) {
